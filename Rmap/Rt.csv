@@ -1,0 +1,186 @@
+area,Rt_lower,Rt_median,Rt_upper
+"Barking and Dagenham",0.84,1.03,1.5
+"Barnet",0.86,1.06,1.3
+"Barnsley",0.27,0.56,1.0
+"Bath and North East Somerset",0.86,1.17,1.6
+"Bedford",0.71,0.93,1.2
+"Bexley",0.82,1.04,1.3
+"Birmingham",0.96,1.11,1.3
+"Blackburn with Darwen",1.04,1.22,1.4
+"Blackpool",0.87,1.17,1.6
+"Bolton",0.72,1.12,1.4
+"Bournemouth, Christchurch and Poole",0.85,1.18,1.8
+"Bracknell Forest",0.79,1.12,1.5
+"Bradford",1.02,1.17,1.4
+"Brent",0.94,1.12,1.8
+"Brighton and Hove",0.82,1.09,1.6
+"Bristol, City of",0.92,1.20,1.7
+"Bromley",0.76,1.05,1.3
+"Buckinghamshire",0.80,1.05,1.3
+"Bury",1.02,1.24,1.6
+"Calderdale",0.98,1.16,1.4
+"Cambridgeshire",0.66,0.90,1.1
+"Camden",0.90,1.09,1.5
+"Central Bedfordshire",0.34,0.82,1.1
+"Cheshire East",0.72,1.11,1.4
+"Cheshire West and Chester",0.86,1.16,1.5
+"Cornwall and Isles of Scilly",0.88,1.36,2.4
+"County Durham",0.73,1.00,1.3
+"Coventry",0.90,1.11,1.7
+"Croydon",0.87,1.08,1.5
+"Cumbria",0.83,1.09,1.4
+"Darlington",0.65,0.99,1.3
+"Derby",0.55,0.92,1.1
+"Derbyshire",0.79,1.01,1.3
+"Devon",0.72,1.08,1.5
+"Doncaster",0.61,0.89,1.1
+"Dorset",0.66,1.10,1.5
+"Dudley",0.91,1.13,1.4
+"Ealing",0.79,1.08,1.3
+"East Riding of Yorkshire",0.64,0.93,1.3
+"East Sussex",0.63,0.94,1.2
+"Enfield",0.62,1.00,1.2
+"Essex",0.74,0.94,1.2
+"Gateshead",0.57,0.90,1.2
+"Gloucestershire",0.94,1.22,1.7
+"Greenwich",0.91,1.12,2.2
+"Hackney and City of London",0.90,1.07,1.3
+"Halton",0.74,1.17,1.5
+"Hammersmith and Fulham",0.91,1.11,1.6
+"Hampshire",0.93,1.19,1.6
+"Haringey",0.79,1.04,1.2
+"Harrow",0.88,1.08,1.4
+"Hartlepool",0.71,0.99,1.5
+"Havering",0.73,0.98,1.2
+"Herefordshire, County of",0.24,0.60,1.1
+"Hertfordshire",0.83,1.03,1.4
+"Hillingdon",0.82,1.08,1.3
+"Hounslow",0.89,1.10,1.4
+"Isle of Wight",0.77,1.14,1.7
+"Islington",0.88,1.07,1.3
+"Kensington and Chelsea",0.90,1.09,1.4
+"Kent",0.80,0.98,1.2
+"Kingston upon Hull, City of",0.60,0.89,1.2
+"Kingston upon Thames",0.85,1.10,1.4
+"Kirklees",0.81,1.03,1.2
+"Knowsley",0.89,1.19,1.5
+"Lambeth",0.91,1.09,1.4
+"Lancashire",1.02,1.20,1.4
+"Leeds",0.81,1.01,1.2
+"Leicester",0.78,0.92,1.1
+"Leicestershire",0.59,0.85,1.0
+"Lewisham",0.86,1.07,1.3
+"Lincolnshire",0.65,0.90,1.2
+"Liverpool",1.02,1.29,2.1
+"Luton",0.63,0.92,1.1
+"Manchester",1.16,1.44,1.9
+"Medway",0.70,0.95,1.2
+"Merton",0.61,1.07,1.3
+"Middlesbrough",0.66,0.97,1.3
+"Milton Keynes",0.75,0.98,1.3
+"Newcastle upon Tyne",0.37,0.84,1.2
+"Newham",0.86,1.05,1.3
+"Norfolk",0.69,0.98,1.4
+"North East Lincolnshire",0.58,0.88,1.2
+"North Lincolnshire",0.62,0.90,1.2
+"North Somerset",0.82,1.14,1.6
+"North Tyneside",0.59,0.89,1.2
+"North Yorkshire",0.81,1.06,1.4
+"Northamptonshire",0.72,0.91,1.1
+"Northumberland",0.60,0.92,1.3
+"Nottingham",0.65,0.91,1.1
+"Nottinghamshire",0.75,0.96,1.3
+"Oldham",1.11,1.39,1.9
+"Oxfordshire",0.96,1.20,1.6
+"Peterborough",0.72,0.93,1.2
+"Plymouth",0.77,1.15,1.7
+"Portsmouth",0.79,1.13,1.5
+"Reading",0.92,1.17,1.6
+"Redbridge",0.80,1.02,1.2
+"Redcar and Cleveland",0.60,0.94,1.3
+"Richmond upon Thames",0.91,1.11,1.5
+"Rochdale",0.65,0.95,1.2
+"Rotherham",0.59,0.88,1.1
+"Rutland",0.56,0.88,1.1
+"Salford",1.04,1.28,1.6
+"Sandwell",0.96,1.13,1.4
+"Sefton",0.71,1.14,1.4
+"Sheffield",0.84,1.02,1.2
+"Shropshire",0.84,1.14,1.6
+"Slough",0.85,1.10,1.5
+"Solihull",0.81,1.08,1.3
+"Somerset",0.73,1.08,1.5
+"South Gloucestershire",0.85,1.17,1.6
+"South Tyneside",0.61,0.91,1.3
+"Southampton",0.90,1.19,1.7
+"Southend-on-Sea",0.59,0.92,1.2
+"Southwark",0.90,1.08,1.3
+"St. Helens",0.89,1.18,1.5
+"Staffordshire",0.85,1.07,1.3
+"Stockport",1.04,1.29,1.8
+"Stockton-on-Tees",0.72,1.00,1.5
+"Stoke-on-Trent",0.74,1.07,1.3
+"Suffolk",0.80,1.11,1.9
+"Sunderland",0.61,0.92,1.2
+"Surrey",0.91,1.11,1.4
+"Sutton",0.87,1.10,1.5
+"Swindon",1.24,2.01,3.1
+"Tameside",1.01,1.25,1.6
+"Telford and Wrekin",0.58,1.07,1.4
+"Thurrock",0.67,0.97,1.2
+"Torbay",0.73,1.11,1.6
+"Tower Hamlets",0.87,1.06,1.3
+"Trafford",1.20,1.61,2.4
+"Wakefield",0.72,0.94,1.1
+"Walsall",0.74,1.06,1.3
+"Waltham Forest",0.77,1.02,1.3
+"Wandsworth",0.82,1.08,1.3
+"Warrington",0.80,1.19,1.5
+"Warwickshire",0.91,1.14,1.5
+"West Berkshire",0.91,1.20,1.7
+"West Sussex",0.83,1.08,1.4
+"Westminster",0.91,1.09,1.4
+"Wigan",0.94,1.20,1.5
+"Wiltshire",0.87,1.19,1.6
+"Windsor and Maidenhead",0.86,1.11,1.4
+"Wirral",0.84,1.17,1.5
+"Wokingham",0.84,1.14,1.5
+"Wolverhampton",0.94,1.16,1.8
+"Worcestershire",0.90,1.15,1.5
+"York",0.68,0.96,1.3
+"Blaenau Gwent",0.76,1.08,1.6
+"Bridgend",0.69,1.05,1.4
+"Caerphilly",0.75,1.07,1.4
+"Cardiff",0.76,1.08,1.4
+"Carmarthenshire",0.73,1.10,1.6
+"Ceredigion",0.65,1.06,1.5
+"Conwy",0.76,1.14,1.6
+"Denbighshire",0.88,1.20,1.6
+"Flintshire",0.99,1.26,1.8
+"Gwynedd",0.76,1.13,1.6
+"Isle of Anglesey",0.74,1.14,1.7
+"Merthyr Tydfil",0.71,1.05,1.4
+"Monmouthshire",0.71,1.07,1.4
+"Neath Port Talbot",0.70,1.05,1.4
+"Newport",0.78,1.11,1.5
+"Pembrokeshire",0.74,1.15,1.9
+"Powys",0.68,1.05,1.4
+"Rhondda Cynon Taf",0.75,1.06,1.4
+"Swansea",0.75,1.09,1.6
+"Torfaen",0.76,1.08,1.5
+"Vale of Glamorgan",0.74,1.07,1.4
+"Wrexham",1.08,1.40,2.1
+"Ayrshire and Arran",0.73,1.06,1.5
+"Borders",0.60,0.95,1.4
+"Dumfries and Galloway",0.61,1.02,1.5
+"Fife",0.59,0.92,1.3
+"Forth Valley",0.44,0.90,1.3
+"Grampian",0.51,0.89,1.3
+"Greater Glasgow and Clyde",0.77,1.05,1.5
+"Highland",0.54,0.97,1.7
+"Lanarkshire",0.73,1.02,1.4
+"Lothian",0.58,0.91,1.2
+"Orkney",0.43,0.91,1.6
+"Shetland",0.41,0.92,1.8
+"Tayside",0.57,0.91,1.3
+"Western Isles",0.47,0.96,1.7
