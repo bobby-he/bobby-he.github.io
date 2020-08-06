@@ -1,28 +1,41 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
+
 <html>
-	<head>
-		<title>Bobby He</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<!-- <li><a href="/blog">Blog</a></li> -->
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>This page is under construction</h1>
-				<!-- <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p> -->
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:bobby.he@stats.ox.ac.uk">email</a></li>
-        		<li><a href="https://github.com/bobby-he">github.com/bobby-he</a></li>
-			</ul>
-		</footer>
-	</body>
+
+    <head>
+        <!-- Load d3.js -->
+        <script src="https://d3js.org/d3.v5.js"></script>
+        <script src="https://d3js.org/topojson.v1.min.js"></script>	
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.0/milligram.css">
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="left-pane">
+                <svg id="map" width="600" height="1000"></svg>
+            </div>
+            <div class="right-pane">
+                <h1 id="data-heading">Select an area in the map...</h1>
+                <h3>Cases</h3>
+                <div class="info-row"><span class="info-heading">Last 7 days: </span><span id="cases-last7-info">TODO</span></div>
+                <div class="info-row"><span class="info-heading">Last 7 days per 100k people: </span><span id="cases-last7-per-info">TODO</span></div>
+                <div class="info-row"><span class="info-heading">Total Cases: </span><span id="cases-total-info">TODO</span></div>
+                <h3>Estimates</h3>
+                <div class="info-row"><span class="info-heading">Rt [credible interval]: </span><span id="rt-info"></span></div>
+                <div class="info-row"><span class="info-heading">Total cases, next 7 days [credible interval]: </span><span id="case-proj-info"></span></div>
+                <svg id="chart" width="600" height="250"></svg>
+            </div>
+        </div>
+
+        <script src="map.js"></script>
+
+    </body>
+
 </html>
