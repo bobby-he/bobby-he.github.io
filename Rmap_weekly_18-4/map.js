@@ -1,9 +1,9 @@
 // Constants
-const TOPOJSON_PATH = "assets/data/uk_lad_boundaries.json";
-const SITE_DATA_PATH = "assets/data/site_data.csv";
-const NHS_SCOTLAND_MAP = "assets/data/nhs_scotland_health_boards.csv";
-const ENGLAND_META_AREA_MAP = "assets/data/england_meta_areas.csv";
-const METADATA_PATH = "assets/data/metadata.csv";
+const TOPOJSON_PATH = "uk_lad_boundaries.json";
+const SITE_DATA_PATH = "site_data.csv";
+const NHS_SCOTLAND_MAP = "nhs_scotland_health_boards.csv";
+const ENGLAND_META_AREA_MAP = "england_meta_areas.csv";
+const METADATA_PATH = "metadata.csv";
 const MAP_PATH = 'default';
 const RT_PATH = "Rt.csv";
 const CASE_PROJECTION_PATH = "Cproj.csv";
