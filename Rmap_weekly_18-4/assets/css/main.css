@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+}
+
+.background {
+    fill: none;
+    pointer-events: all;
+}
+
+.feature {
+    cursor: pointer;
+}
+
+.feature.active {
+    fill: orange;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.mesh {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.5px;
+    vector-effect: non-scaling-stroke;
+}
+
+.legend rect {
+    fill:white;
+    stroke:black;
+    opacity:0.8;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    font: 12px sans-serif;
+    background: #333;
+    color: #eee;
+    border: 0px;
+    border-radius: 8px;
+  }
+
+div.tooltip span.header {
+    font-weight: bold;
+}
+
+.actual-cases-line {
+    fill: none;
+    stroke: rgba(70, 130, 180, 0.4);
+    stroke-width: 1;
+}
+
+.smoothed-cases-line {
+    fill: none;
+    stroke: rgba(70, 130, 180);
+    stroke-width: 1.5;
+    opacity: 0.0;
+}
+
+.predicted-cases-median-line {
+    fill: none;
+    stroke: rgb(70, 130, 180);
+    stroke-width: 1.5;
+}
+
+.predicted-cases-inner-area {
+    fill: rgb(70, 130, 180);
+    opacity: 0.4;
+}
+
+
+.predicted-cases-outer-area {
+    fill: rgb(70, 130, 180);
+    opacity: 0.2;
+}
+
+
+.projected-cases-median-line {
+    fill: none;
+    /* stroke: rgb(139, 0, 0); */
+    /* stroke: rgba(70, 130, 180); */
+    stroke: rgb(61, 61, 61);
+    stroke-width: 1.5;
+    stroke-dasharray: 4;
+}
+
+.projected-cases-inner-area {
+    /* fill: rgb(139, 0, 0); */
+    /* stroke: rgba(70, 130, 180);
+    stroke-width: 1.5;
+    stroke-dasharray: 4; */
+    /* fill: rgba(70, 130, 180); */
+    opacity: 0.4;
+}
+
+.projected-cases-outer-area {
+    /* fill: rgb(139, 0, 0); */
+    /* stroke: rgba(70, 130, 180);
+    stroke-width: 1.5;
+    stroke-dasharray: 4; */
+    /* fill: rgba(70, 130, 180); */
+    opacity: 0.2;
+}
+
+.rt-line {
+    fill: none;
+    stroke: rgba(70, 130, 180);
+    stroke-width: 1.5;
+}
+
+.rt-inner-area {
+    fill: rgb(70, 130, 180);
+    opacity: 0.4;
+}
+
+.rt-outer-area {
+    fill: rgb(70, 130, 180);
+    opacity: 0.2;
+}
+
+.rt-projected-line {
+    fill: none;
+    /* stroke: rgb(139, 0, 0); */
+    stroke: rgb(61, 61, 61);
+    stroke-width: 1.5;
+    stroke-dasharray: 4;
+}
+
+.rt-projected-inner-area {
+    /* fill: rgb(139, 0, 0); */
+    opacity: 0.4;
+}
+
+.rt-projected-outer-area {
+    /* fill: rgb(139, 0, 0); */
+    opacity: 0.2;
+}
+
+.rt-horizontal-line {
+    stroke-width: 2;
+    stroke: #333;
+    stroke-dasharray: 5;
+}
+
+/*#slider-svg{*/
+    /*height: 10px;*/
+    /*width: 500px;*/
+/*}*/
+.slider-button {
+    width: 20px;
+    height: 20px;
+    fill: #eee;
+    rx: 5px;
+    stroke: #aaa;
+    cursor: pointer;
+}
+
+.slider-button-path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    stroke: #777;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 0em;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 0em;
+}
+
+h3 small {
+    font-size: 50%;
+    display: block;
+    margin-bottom: 0em;
+}
+
+
+.info-row {
+    width: 100%;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+
+.focus circle {
+    fill: #F1F3F3;
+    stroke: #333;
+    stroke-width: 5px; 
+}
+.focus text {
+    font-size: 12px;
+}
+
+.hover-line {
+    stroke: #333;
+    stroke-width: 2px;
+    stroke-dasharray: 3,3;
+}
+
+.area-search-container {
+    max-width: 350px;
+    position: relative;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+
+.text-column {
+    width: 50%
+}
+
+
+.search-input {
+    background-color: transparent;
+    border: 0.1rem solid #d1d1d1;
+    border-radius: .4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    height: 2em;
+    padding: .6rem 1.0rem .7rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.current-date-line {
+    stroke: #777;
+    stroke-width: 1px;
+    stroke-dasharray: 3,3;
+}
+
+.search-icon {
+    right: 0.2em;
+    top: 0.2em;
+    position: absolute;
+}
+
+/* From https://github.com/Pixabay/JavaScript-autoComplete */
+.autocomplete-suggestions {
+    text-align: left; 
+    cursor: default; 
+    border: 1px solid #ccc; 
+    border-top: 0; 
+    background: #fff; 
+    box-shadow: -1px 1px 3px rgba(0,0,0,.1);
+    position: absolute; 
+    display: none; 
+    z-index: 9999; 
+    max-height: 254px; 
+    overflow: hidden; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+}
+.autocomplete-suggestion { 
+    position: relative; 
+    padding: 0 .6em; 
+    line-height: 23px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    font-size: 1.0em; 
+    color: #333; 
+}
+.autocomplete-suggestion b { 
+    font-weight: normal; 
+    color: #1f8dd6; 
+}
+.autocomplete-suggestion.selected { 
+    background: #f0f0f0; 
+}
+
+.map-outer-container {
+    border: 1px solid black;
+}
+
+.standalone-map-border {
+    border: 10px solid black;
+    margin: auto;
+	vertical-align: middle; 
+	position: relative;
+	width: 80%;
+}
+
+.standalone-map-container { 
+    padding: 1rem;
+	width: 100%;
+    overflow: hidden; 
+}
+
+
+#chart-container {
+    width: 100%;
+    margin: auto;
+    /*margin-bottom: -2em;*/
+}
+
+#zoom_in {
+    font-size: max(1.5vw, 30px);
+}
+
+#zoom_out {
+    font-size: max(1.5vw, 30px);
+}
+
+#areaSearch {
+    font-size: max(0.75em, 1.0vw);
+    margin-bottom: 0em;
+    height: 2em;
+}

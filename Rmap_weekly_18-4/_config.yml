@@ -1,0 +1,48 @@
+---
+title: UK Local Covid Map
+author:
+  name: UK Local Covid Map
+  github: rs-delve
+publisher: The Royal Society
+github_username: rs-delve
+description: > # this means to ignore newlines until "show_excerpts:"
+  Local nowcasting of Covid-19 in UK
+
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+#- jekyll-remote-theme
+
+#remote_theme: lawrennd/proceedings
+
+baseurl: '/'
+url: https://localcovid.info
+
+timezone: UTC
+encoding: utf-8
+markdown: kramdown
+display:
+  copy_button:
+    bibtex: false
+    endnote: false
+    apa: false
+    ris: false
+  comments: false
+ghub:
+  edit: false
+future: true
+logo: logo.png
+
+header_pages:
+  - index.md
+  - regional.md
+  - data-methods.md
+  - limitations.md
+  - people.md
+  - about.md
+
+
+delve_url: https://rs-delve.github.io/
+
+# Google analytics
+google_analytics: G-TEZZX5Z9P2
