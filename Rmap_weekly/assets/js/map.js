@@ -8,8 +8,6 @@ const MAP_PATH = 'default';
 const RT_PATH = "Rt.csv";
 const CASE_PROJECTION_PATH = "Cproj.csv";
 const CASE_PREDICTION_PATH = "Cpred.csv";
-const INFECTION_PROJECTION_PATH = "Xproj.csv";
-const INFECTION_PREDICTION_PATH = "Xpred.csv";
 const CASE_WEEKLY_PATH = "Cweekly.csv";
 const PEXCEED_PATH = "Pexceed.csv";
 
@@ -68,71 +66,37 @@ const sliderRightPath = sliderRightG.append("path")
 
 // Set up dimensions for chart
 const chartMargin = { top: 30, right: 30, bottom: 30, left: 30 };
-
-
-const caseChartSvg = d3.select("#case-chart");
+const caseChartSvg = d3.select("#chart");
 // Note: Assuming the two charts are the same size! 
 const chartWidth = Math.max(500+caseChartSvg.attr("width") - chartMargin.left - chartMargin.right, 0);
 const chartHeight = Math.max(200+caseChartSvg.attr("height") - chartMargin.top - chartMargin.bottom, 0);
 
-const chartCG = caseChartSvg.append("g")
+const chartG = caseChartSvg.append("g")
     .attr("transform", "translate(" + chartMargin.left + "," + chartMargin.top + ")");
 
-const actualCChartLine = caseChartSvg.append("path")
+const actualChartLine = caseChartSvg.append("path")
     .attr("class", "actual-cases-line")
 
-const smoothedCChartLine = caseChartSvg.append("path")
+const smoothedChartLine = caseChartSvg.append("path")
     .attr("class", "smoothed-cases-line")
 
-const predictedCChartLine = caseChartSvg.append("path")
+const predictedChartLine = caseChartSvg.append("path")
     .attr("class", "predicted-cases-median-line");
 
-const predictedCInnerArea = caseChartSvg.append("path")
+const predictedInnerArea = caseChartSvg.append("path")
     .attr("class", "predicted-cases-inner-area");
 
-const predictedCOuterArea = caseChartSvg.append("path")
+const predictedOuterArea = caseChartSvg.append("path")
     .attr("class", "predicted-cases-outer-area");
 
-const projectedCChartLine = caseChartSvg.append("path")
+const projectedChartLine = caseChartSvg.append("path")
     .attr("class", "projected-cases-median-line");
 
-const projectedCInnerArea = caseChartSvg.append("path")
+const projectedInnerArea = caseChartSvg.append("path")
     .attr("class", "projected-cases-inner-area");
 
-const projectedCOuterArea = caseChartSvg.append("path")
+const projectedOuterArea = caseChartSvg.append("path")
     .attr("class", "projected-cases-outer-area");
-
-// Note: Assuming the two charts are the same size! 
-const infectionChartSvg = d3.select("#infection-chart");
-
-const chartXG = infectionChartSvg.append("g")
-    .attr("transform", "translate(" + chartMargin.left + "," + chartMargin.top + ")");
-
-const actualXChartLine = infectionChartSvg.append("path")
-    .attr("class", "actual-cases-line")
-
-const smoothedXChartLine = infectionChartSvg.append("path")
-    .attr("class", "smoothed-cases-line")
-
-
-const predictedXChartLine = infectionChartSvg.append("path")
-    .attr("class", "predicted-infections-median-line");
-
-const predictedXInnerArea = infectionChartSvg.append("path")
-    .attr("class", "predicted-infections-inner-area");
-
-const predictedXOuterArea = infectionChartSvg.append("path")
-    .attr("class", "predicted-infections-outer-area");
-
-const projectedXChartLine = infectionChartSvg.append("path")
-    .attr("class", "projected-infections-median-line");
-
-const projectedXInnerArea = infectionChartSvg.append("path")
-    .attr("class", "projected-infections-inner-area");
-
-const projectedXOuterArea = infectionChartSvg.append("path")
-    .attr("class", "projected-infections-outer-area");
-
 
 const caseCurrentDateLine = caseChartSvg.append("g");
 
@@ -140,14 +104,6 @@ caseCurrentDateLine.append("line")
     .attr("class", "current-date-line")
     .attr("y1", 0)
     .attr("y2", chartHeight);
-
-const infectionCurrentDateLine = infectionChartSvg.append("g");
-
-infectionCurrentDateLine.append("line")
-    .attr("class", "current-date-line")
-    .attr("y1", 0)
-    .attr("y2", chartHeight);
-
 
 const rtChartSvg = d3.select("#rt-chart");
 
@@ -184,19 +140,11 @@ const caseChartXAxis = caseChartSvg.append("g")
     .attr("class", "chart-x-axis")
     .attr("transform", `translate(0,${chartHeight})`);
 
-const infectionChartXAxis = infectionChartSvg.append("g")
-    .attr("class", "chart-x-axis")
-    .attr("transform", `translate(0,${chartHeight})`);
-
-
 const rtChartXAxis = rtChartSvg.append("g")
     .attr("class", "chart-x-axis")
     .attr("transform", `translate(0,${chartHeight})`);
 
 const caseX = d3.scaleTime()
-    .range([chartMargin.left, chartMargin.left + chartWidth]);
-
-const infectionX = d3.scaleTime()
     .range([chartMargin.left, chartMargin.left + chartWidth]);
 
 const rtX = d3.scaleTime()
@@ -206,11 +154,6 @@ const rtX = d3.scaleTime()
 const caseChartYAxis = caseChartSvg.append("g")
     .attr("class", "chart-y-axis")
     .attr("transform", `translate(${chartMargin.left},0)`);
-
-const infectionChartYAxis = infectionChartSvg.append("g")
-    .attr("class", "chart-y-axis")
-    .attr("transform", `translate(${chartMargin.left},0)`);
-
 
 const rtChartYAxis = rtChartSvg.append("g")
     .attr("class", "chart-y-axis")
@@ -222,13 +165,6 @@ const caseChartTitle = caseChartSvg.append("text")
     .attr("y", (chartMargin.top / 2))
     .attr("text-anchor", "middle")
     .style("font-size", "16px");
-
-const infectionChartTitle = infectionChartSvg.append("text")
-    .attr("x", (chartWidth / 2))
-    .attr("y", (chartMargin.top / 2))
-    .attr("text-anchor", "middle")
-    .style("font-size", "16px");
-
 
 const rtChartTitle = rtChartSvg.append("text")
     .attr("x", (chartWidth / 2))
@@ -300,8 +236,6 @@ const rtData = d3.map();
 const caseTimeseries = d3.map();          // The real historical cases
 const caseProjTimeseries = d3.map();
 const casePredTimeseries = d3.map();
-const infectionProjTimeseries = d3.map();
-const infectionPredTimeseries = d3.map();
 const caseWeeklyTimeseries = d3.map();    // Actual and projected cases: plotted.
                                           // TODO: The data in CASE_WEEKLY_PATH give the provenance of the weekly cases as `inferred`
                                           // and `projected`. However, epimap.r takes data from the Count (observed) matrix. The labels
@@ -368,8 +302,6 @@ const map_path = "assets/data/".concat(urlParams.get("map") || MAP_PATH);
 const rt_path = map_path.concat("/", RT_PATH);
 const case_projection_path = map_path.concat("/", CASE_PROJECTION_PATH);
 const case_prediction_path = map_path.concat("/", CASE_PREDICTION_PATH);
-const infection_projection_path = map_path.concat("/", INFECTION_PROJECTION_PATH);
-const infection_prediction_path = map_path.concat("/", INFECTION_PREDICTION_PATH);
 const case_weekly_path = map_path.concat("/", CASE_WEEKLY_PATH);
 const pexceed_path = map_path.concat("/", PEXCEED_PATH);
 
@@ -423,15 +355,21 @@ const loadCaseProjections = d3.csv(case_projection_path).then(data => data.forEa
     }
     d.Date = d3.timeParse("%Y-%m-%d")(d.Date);
     if (d.C_025 != undefined) {
-      d.C_lower95 = +d.C_025;
+      d.C_lower = +d.C_025;
       d.C_median = +d.C_50;
-      d.C_upper95 = +d.C_975;
+      d.C_upper = +d.C_975;
+    } else {
+      d.C_lower = +d.C_lower;
+      d.C_median = +d.C_median;
+      d.C_upper = +d.C_upper;
     }  
 
     if (d.C_25 != undefined) {
-      d.C_lower50 = +d.C_25;
-      d.C_upper50 = +d.C_75; 
-    } 
+        d.C_lower2 = +d.C_lower;
+        d.C_upper2 = +d.C_upper;
+        d.C_lower = +d.C_25;
+        d.C_upper = +d.C_75; 
+    }
 
     caseProjTimeseries.get(d.area).push(d);
 }))
@@ -443,9 +381,9 @@ const loadCaseProjections = d3.csv(case_projection_path).then(data => data.forEa
     caseProjTimeseries.each((projections, area) => {
         let caseProjLower = 0, caseProjMedian = 0, caseProjUpper = 0;
         for (let i = 0; i < 7; i++) {
-            caseProjLower += projections[i].C_lower95;
+            caseProjLower += projections[i].C_lower;
             caseProjMedian += projections[i].C_median;
-            caseProjUpper += projections[i].C_upper95;
+            caseProjUpper += projections[i].C_upper;
         }
         nextWeekCaseProj.set(area, {
             caseProjLower: Math.round(caseProjLower),
@@ -458,30 +396,6 @@ const loadCaseProjections = d3.csv(case_projection_path).then(data => data.forEa
     });
 });
 
-const loadInfectionProjections = d3.csv(infection_projection_path).then(data => data.forEach(d => {
-    if (!infectionProjTimeseries.has(d.area)) {
-        infectionProjTimeseries.set(d.area, []);
-    }
-    d.Date = d3.timeParse("%Y-%m-%d")(d.Date);
-    if (d.X_025 != undefined) {
-      d.X_lower95 = +d.X_025;
-      d.X_median = +d.X_50;
-      d.X_upper95 = +d.X_975;
-    }  
-
-    if (d.X_25 != undefined) {
-      d.X_lower50 = +d.X_25;
-      d.X_upper50 = +d.X_75; 
-    } 
-
-    infectionProjTimeseries.get(d.area).push(d);
-}))
-.then(() => {
-    firstProjectionDate = d3.min(infectionProjTimeseries.get(infectionProjTimeseries.keys()[0]).map(r=>r.Date));
-    console.log('First projection date: '+firstProjectionDate);
-});
-
-
 // Cpred.csv, ending at the last prediction date.
 // This is the last predicted (not projected!) date. Predicted is from observations,
 // projected is into the future.
@@ -493,14 +407,20 @@ const loadCasePredictions = d3.csv(case_prediction_path).then(data => data.forEa
     }
     d.Date = d3.timeParse("%Y-%m-%d")(d.Date);
     if (d.C_025) {
-      d.C_lower95 = +d.C_025;
+      d.C_lower = +d.C_025;
       d.C_median = +d.C_50;
-      d.C_upper95 = +d.C_975;
+      d.C_upper = +d.C_975;
+    } else {
+      d.C_lower = +d.C_lower;
+      d.C_median = +d.C_median;
+      d.C_upper = +d.C_upper;
     }  
 
     if (d.C_25) {
-        d.C_lower50 = +d.C_25;
-        d.C_upper50 = +d.C_75; 
+        d.C_lower2 = +d.C_lower;
+        d.C_upper2 = +d.C_upper;
+        d.C_lower = +d.C_25;
+        d.C_upper = +d.C_75; 
     }
 
     casePredTimeseries.get(d.area).push(d);	
@@ -509,30 +429,6 @@ const loadCasePredictions = d3.csv(case_prediction_path).then(data => data.forEa
     lastPredictionDate = d3.max(casePredTimeseries.get(casePredTimeseries.keys()[0]).map(r=>r.Date));
     console.log('Last prediction date: '+lastPredictionDate);
 });
-
-const loadInfectionPredictions = d3.csv(infection_prediction_path).then(data => data.forEach(d => {
-    if (!infectionPredTimeseries.has(d.area)) {
-        infectionPredTimeseries.set(d.area, []);
-    }
-    d.Date = d3.timeParse("%Y-%m-%d")(d.Date);
-    if (d.X_025) {
-      d.X_lower95 = +d.X_025;
-      d.X_median = +d.X_50;
-      d.X_upper95 = +d.X_975;
-    }  
-
-    if (d.X_25) {
-        d.X_lower50 = +d.X_25;
-        d.X_upper50 = +d.X_75; 
-    }
-
-    infectionPredTimeseries.get(d.area).push(d);	
-}))
-.then(() => {
-    lastPredictionDate = d3.max(infectionPredTimeseries.get(infectionPredTimeseries.keys()[0]).map(r=>r.Date));
-    console.log('Last prediction date: '+lastPredictionDate);
-});
-
 
 const loadCaseWeekly = d3.csv(case_weekly_path).then(data => data.forEach(d => {
     if (!caseWeeklyTimeseries.has(d.area)) {
@@ -642,8 +538,8 @@ function getRtForArea(area, availableDates, someDate) {
     }
 
     const median = rt.Rt50.toFixed(1);
-    const upper = rt.Rt975.toFixed(1);
-    const lower = rt.Rt025.toFixed(1);
+    const upper = rt.Rt90.toFixed(1);
+    const lower = rt.Rt10.toFixed(1);
     return `${median} [${lower} - ${upper}]`;
 }
 
@@ -1130,13 +1026,13 @@ function plotCaseChart(chartData, projectionData, predictionData, area) {
 
     const predictedCasesInnerArea = d3.area()
         .x(function (d) { return caseX(d.Date); })
-        .y0(function (d) { return y(d.C_lower50); })
-        .y1(function (d) { return y(d.C_upper50); });
+        .y0(function (d) { return y(d.C_lower); })
+        .y1(function (d) { return y(d.C_upper); });
 
     const predictedCasesOuterArea = d3.area()
         .x(function (d) { return caseX(d.Date); })
-        .y0(function (d) { return y(d.C_lower95); })
-        .y1(function (d) { return y(d.C_upper95); });
+        .y0(function (d) { return y(d.C_lower2); })
+        .y1(function (d) { return y(d.C_upper2); });
 
     const projectedCasesLine = d3.line()
         .x(function (d) { return caseX(d.Date); })
@@ -1144,51 +1040,57 @@ function plotCaseChart(chartData, projectionData, predictionData, area) {
 
     const projectedCasesInnerArea = d3.area()
         .x(function (d) { return caseX(d.Date); })
-        .y0(function (d) { return y(d.C_lower50); })
-        .y1(function (d) { return y(d.C_upper50); });
+        .y0(function (d) { return y(d.C_lower); })
+        .y1(function (d) { return y(d.C_upper); });
     
     const projectedCasesOuterArea = d3.area()
         .x(function (d) { return caseX(d.Date); })
-        .y0(function (d) { return y(d.C_lower95); })
-        .y1(function (d) { return y(d.C_upper95); });
+        .y0(function (d) { return y(d.C_lower2); })
+        .y1(function (d) { return y(d.C_upper2); });
 
-    actualCChartLine
+    actualChartLine
         .datum(chartData)
         .transition()
         .duration(500)
         .attr("d", actualCasesLine);
 
-    predictedCInnerArea
+    smoothedChartLine
+        .datum(chartData)
+        .transition()
+        .duration(500)
+        .attr("d", smoothedCasesLine);
+
+    predictedInnerArea
         .datum(predictionData)
         .transition()
         .duration(500)
         .attr("d", predictedCasesInnerArea);
 
-    predictedCOuterArea
+    predictedOuterArea
         .datum(predictionData)
         .transition()
         .duration(500)
         .attr("d", predictedCasesOuterArea);
 
-    predictedCChartLine
+    predictedChartLine
         .datum(predictionData)
         .transition()
         .duration(500)
         .attr("d", predictedCasesLine);
 
-    projectedCInnerArea
+    projectedInnerArea
         .datum(projectionData)
         .transition()
         .duration(500)
         .attr("d", projectedCasesInnerArea);
 
-    projectedCOuterArea
+    projectedOuterArea
         .datum(projectionData)
         .transition()
         .duration(500)
         .attr("d", projectedCasesOuterArea);
 
-    projectedCChartLine
+    projectedChartLine
         .datum(projectionData)
         .transition()
         .duration(500)
@@ -1197,7 +1099,6 @@ function plotCaseChart(chartData, projectionData, predictionData, area) {
     caseChartXAxis.call(d3.axisBottom(caseX).tickFormat(d3.timeFormat("%b")));
     caseChartYAxis.call(d3.axisLeft(y).ticks(5));
     caseChartTitle.text(`Covid-19 Cases for ${area}`);
-
 
     caseCurrentDateLine
         .style("display", null)
@@ -1255,163 +1156,6 @@ function plotCaseChart(chartData, projectionData, predictionData, area) {
 	        // TODO: Change this to cases actual, smoothed and projections
 	        var chartDateFormat = d3.timeFormat("%d %b")
 	        focus.attr("transform", "translate(" + caseX(d.Date) + "," + y(getValue(d)) + ")");
-	        focus.select("text").text(function () { return chartDateFormat(d.Date)+": "+getValue(d); });
-	        focus.select(".x-hover-line").attr("y2", chartHeight - y(getValue(d)));
-		}
-    }
-}
-
-
-function plotInfectionChart(chartData, projectionData, predictionData, area) {
-    const xDomain = d3.extent([...chartData.map(c => c.Date), ...projectionData.map(p => p.Date)]);
-    const cases_max = d3.max([...chartData.map(c=>c.cases_new)]);
-    const projs_max = d3.max([...projectionData.map(p=>p.X_median)]);
-    const yDomain = [0, d3.max([cases_max, d3.min([2.0*cases_max, projs_max])])];
-
-    infectionX.domain(xDomain);
-    // const x = d3.scaleTime()
-    //     .domain(xDomain)
-    //     .range([chartMargin.left, chartMargin.left + chartWidth]);
-    const y = d3.scaleLinear()
-        .domain(yDomain)
-        .range([chartHeight, 0]);
-
-    // Define the lines
-    const actualCasesLine = d3.line()
-        .x(function (d) { return infectionX(d.Date); })
-        .y(function (d) { return y(d.cases_new); });
-
-    const predictedInfectionsLine = d3.line()
-        .x(function (d) { return infectionX(d.Date); })
-        .y(function (d) { return y(d.X_median); });
-
-    const predictedInfectionsInnerArea = d3.area()
-        .x(function (d) { return infectionX(d.Date); })
-        .y0(function (d) { return y(d.X_lower50); })
-        .y1(function (d) { return y(d.X_upper50); });
-
-    const predictedInfectionsOuterArea = d3.area()
-        .x(function (d) { return infectionX(d.Date); })
-        .y0(function (d) { return y(d.X_lower95); })
-        .y1(function (d) { return y(d.X_upper95); });
-
-    const projectedInfectionsLine = d3.line()
-        .x(function (d) { return infectionX(d.Date); })
-        .y(function (d) { return y(d.X_median); });
-
-    const projectedInfectionsInnerArea = d3.area()
-        .x(function (d) { return infectionX(d.Date); })
-        .y0(function (d) { return y(d.X_lower50); })
-        .y1(function (d) { return y(d.X_upper50); });
-    
-    const projectedInfectionsOuterArea = d3.area()
-        .x(function (d) { return infectionX(d.Date); })
-        .y0(function (d) { return y(d.X_lower95); })
-        .y1(function (d) { return y(d.X_upper95); });
-
-
-    actualXChartLine
-        .datum(chartData)
-        .transition()
-        .duration(500)
-        .attr("d", actualCasesLine);
-
-    predictedXInnerArea
-        .datum(predictionData)
-        .transition()
-        .duration(500)
-        .attr("d", predictedInfectionsInnerArea);
-
-    predictedXOuterArea
-        .datum(predictionData)
-        .transition()
-        .duration(500)
-        .attr("d", predictedInfectionsOuterArea);
-
-    predictedXChartLine
-        .datum(predictionData)
-        .transition()
-        .duration(500)
-        .attr("d", predictedInfectionsLine);
-
-    projectedXInnerArea
-        .datum(projectionData)
-        .transition()
-        .duration(500)
-        .attr("d", projectedInfectionsInnerArea);
-
-    projectedXOuterArea
-        .datum(projectionData)
-        .transition()
-        .duration(500)
-        .attr("d", projectedInfectionsOuterArea);
- 
-    projectedXChartLine
-        .datum(projectionData)
-        .transition()
-        .duration(500)
-        .attr("d", projectedInfectionsLine);
-
-    infectionChartXAxis.call(d3.axisBottom(infectionX).tickFormat(d3.timeFormat("%b")));
-    infectionChartYAxis.call(d3.axisLeft(y).ticks(5));
-    infectionChartTitle.text(`Covid-19 Infections for ${area}`);
-
-    infectionCurrentDateLine
-        .style("display", null)
-        .attr("transform", "translate(" + infectionX(selectedDate) + ", 0)");
-
-    const focus = infectionChartSvg.append("g")
-        .attr("class", "focus")
-        .style("display", "none");
-
-    focus.append("line")
-        .attr("class", "x-hover-line hover-line")
-        .attr("y1", 0)
-        .attr("y2", chartHeight);
-
-    focus.append("circle")
-        .attr("r", 2);
-
-    focus.append("text")
-        .attr("x", -30)
-        .attr("y", -15)
-        .attr("dy", ".31em");
-
-    infectionChartSvg.append("rect")
-        .attr("transform", "translate(" + chartMargin.left + ",0)")
-        .attr("class", "overlay")
-        .attr("width", chartWidth)
-        .attr("height", chartHeight)
-        .on("mouseover", function () { focus.style("display", null); })
-        .on("mouseout", function () { focus.style("display", "none"); })
-        .on("mousemove", mousemove);
-
-    const bisectDate = d3.bisector(function (d) { return d.Date; }).left;
-    const allData = [...chartData, ...projectionData.filter(d => (d.Date > lastObservationDate))];
-
-    function getValue(d) {
-        if (d.Date > lastObservationDate) {
-            return d.X_median;
-        }
-        else {
-            return d.cases_new;
-        }
-    }
-
-    function mousemove() {
-        const x0 = infectionX.invert(d3.mouse(this)[0] + chartMargin.left),
-            i = bisectDate(allData, x0, 1),
-            d0 = allData[i - 1],
-     	    d1 = allData[i];
-
-		if (d1 !== undefined) {
-			// On dragging a mouse from out of bounds, the bisection may give a date index past the end
-			// of allData.
-            const d = x0 - d0.Date > d1.Date - x0 ? d1 : d0;
-
-	        // TODO: Change this to cases actual, smoothed and projections
-	        var chartDateFormat = d3.timeFormat("%d %b")
-	        focus.attr("transform", "translate(" + infectionX(d.Date) + "," + y(getValue(d)) + ")");
 	        focus.select("text").text(function () { return chartDateFormat(d.Date)+": "+getValue(d); });
 	        focus.select(".x-hover-line").attr("y2", chartHeight - y(getValue(d)));
 		}
@@ -1578,27 +1322,16 @@ function selectArea(selectedArea) {
         console.log("ERROR: No chart data found for area ", area);
         return;
     }
-    const projectionCasesData = caseProjTimeseries.get(area);
-    if (!projectionCasesData) {
-        console.log("ERROR: No projection cases data found for area ", area);
+    const projectionData = caseProjTimeseries.get(area);
+    if (!projectionData) {
+        console.log("ERROR: No projection data found for area ", area);
         return;
     }
-    const predictionCasesData = casePredTimeseries.get(area);
-    if (!predictionCasesData) {
-        console.log("ERROR: No prediction cases data found for area ", area);
+    const predictionData = casePredTimeseries.get(area);
+    if (!predictionData) {
+        console.log("ERROR: No prediction data found for area ", area);
         return;
     }
-    const projectionInfectionsData = infectionProjTimeseries.get(area);
-    if (!projectionInfectionsData) {
-        console.log("ERROR: No projection infections found for area ", area);
-        return;
-    }
-    const predictionInfectionsData = infectionPredTimeseries.get(area);
-    if (!predictionInfectionsData) {
-        console.log("ERROR: No prediction infections found for area ", area);
-        return;
-    }
-
 
     const rtChartData = rtData.get(area);
     if (!rtChartData) {
@@ -1606,9 +1339,8 @@ function selectArea(selectedArea) {
         return;
     }
 
-    plotCaseChart(chartData, projectionCasesData, predictionCasesData, area);
-    plotInfectionChart(chartData, projectionInfectionsData, predictionInfectionsData, area);
-    plotRtChart(rtChartData, chartData, projectionCasesData, predictionCasesData, area);
+    plotCaseChart(chartData, projectionData, predictionData, area);
+    plotRtChart(rtChartData, chartData, projectionData, predictionData, area);
 
 	function formatdate(date) {
 		return date.getDate()+' '+MONTHS[date.getMonth()]
@@ -1660,9 +1392,6 @@ function selectDate(date) {
         .transition().duration(100)
         .attr("transform", "translate(" + rtX(selectedDate) + ", 0)");
     caseCurrentDateLine
-        .transition().duration(100)
-        .attr("transform", "translate(" + caseX(selectedDate) + ", 0)");
-    infectionCurrentDateLine
         .transition().duration(100)
         .attr("transform", "translate(" + caseX(selectedDate) + ", 0)");
 }
