@@ -1,2 +1,7 @@
 sass:
   sass_dir: _sass
+
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+#- jekyll-remote-theme
