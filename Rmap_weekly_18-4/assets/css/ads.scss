@@ -3,6 +3,6 @@
 ---
 $grey-color:       #828282;
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+// @import
+//   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+//   "minima/initialize";
