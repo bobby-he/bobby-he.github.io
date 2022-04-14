@@ -9,9 +9,9 @@ Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statisti
 
 I am broadly interested in the basics of deep learning. Most of my work attempts to further our theoretical understanding of how Neural Networks (NNs) work, and connect these insights so as to devise principled methods that improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
 
-Before starting my PhD I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Sprague](https://www.statslab.cam.ac.uk/files/Rollo/spragueaward18.pdf) (jointly) and [Wishart prizes](https://en.wikipedia.org/wiki/Part_III_of_the_Mathematical_Tripos#Prizes) in Part III (2018).
+Before starting my PhD I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Sprague](https://www.statslab.cam.ac.uk/files/Rollo/spragueaward18.pdf) (jointly) and [Wishart prizes](https://en.wikipedia.org/wiki/Part_III_of_the_Mathematical_Tripos#Prizes) in Part III.
 
-I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning at [DeepMind](http://deepmind.com/) with James Martens in the summer of 2022.
+I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning with James Martens at [DeepMind](http://deepmind.com/) in the summer of 2022.
 
 In my spare time I like to: play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)); play and follow various sports such as football (Liverpool in particular) or tennis; and sketch.
 
