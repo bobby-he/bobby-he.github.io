@@ -5,15 +5,15 @@ layout: default
 
 <!-- <img style="float: right;" src="./profile_pic/pp.jpg"> -->
 
-I'm a final year PhD student at the Department of Statistics of the University of Oxford supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), [Arnaud Doucet](http://www.stats.ox.ac.uk/~doucet/) and [George Deligiannidis](https://www.stats.ox.ac.uk/~deligian/).
+Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statistics in Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), [Arnaud Doucet](http://www.stats.ox.ac.uk/~doucet/) and [George Deligiannidis](https://www.stats.ox.ac.uk/~deligian/).
 
-I am broadly interested in the basics of deep learning. Most of my work tries to develop a theoretical understanding of how Neural Networks (NNs) work and using these insights to derive principled methods that improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for things such as knowledge distillation or self-supervised learning, as well as uncertainty estimation and Bayesian deep learning.
+I am broadly interested in the basics of deep learning. Most of my work tries to develop our theoretical understanding of how Neural Networks (NNs) work in some way, and to use these insights to derive principled methods that improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
 
 Before starting my PhD, I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Srague](https://www.statslab.cam.ac.uk/sprague-prize) (jointly) and Wishart prizes in Part III.
 
 I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am excited to intern at [DeepMind](http://deepmind.com/) with James Martens in the summer of 2022.
 
-In my spare time I like to: play and perform on the violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)); play and watch various sports like football or tennis; and sketch.
+In my spare time I like to: play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)); play and follow various sports like football or tennis; and sketch.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -25,37 +25,35 @@ In my spare time I like to: play and perform on the violin (e.g. this [banger](h
 <a href="https://mobile.twitter.com/bobby_he" class="fa fa-twitter" style="text-decoration:none; font-size: 0.9rem"></a>
 
 
-<!-- ---
+---
 
 ## Publications
 
-**<span style="font-size:;">When Does Re-initialization Work?</span>** &nbsp;
+**<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
 \
-Sheheryar Zaidi\*, Tudor Berariu\*, Hyunjik Kim, Jörg Bornschein, Claudia Clopath, Yee Whye Teh, Razvan Pascanu\
+Francisca Vasconcelos\*, Bobby He\*, Nalini Singh, Yee Whye Teh\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
 **_Preprint, 2022_**\
-<a href="https://drive.google.com/file/d/1pAmxgp7NQsDncw5QCwrD09uPoO5bJrLs/view" class="btn btn-outline-danger btn-xs">PDF</a>
+<a href="https://arxiv.org/abs/2202.10847" class="btn btn-outline-danger btn-xs">Paper</a>
 
-**<span style="font-size:;">LieTransformer: Equivariant Self-Attention for Lie Groups</span>**
+**<span style="font-size:;">Feature Kernel Distillation</span>**
 \
-Michael Hutchinson\*, Charline Le Lan\*, Sheheryar Zaidi\*, Emilien Dupont, Yee Whye Teh, Hyunjik Kim\
+Bobby He, Mete Ozay\
+**_ICLR, 2022_**\
+<a href="https://openreview.net/forum?id=tBIQEvApZK5" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://research.samsung.com/blog/Feature_Kernel_Distillation" class="btn btn-outline-danger btn-xs">Blog</a> 
+
+**<span style="font-size:;">Probabilistic fine-tuning of pruning masks and PAC-Bayes self-bounded learning</span>** 
+\
+Soufiane Hayou, Bobby He, Gintare Karolina Dziugaite\
+**_Preprint, 2021_**\
+<a href="https://arxiv.org/abs/2110.11804" class="btn btn-outline-danger btn-xs">Paper</a>
+
+**<span style="font-size:;">Stable ResNet</span>**
+\
+Soufiane Hayou\*, Eugenio Clerico\*, Bobby He\*, George Deligiannidis, Arnaud Doucet, Judith Rousseau\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-**_ICML, 2021_**\
-<a href="https://arxiv.org/abs/2012.10885" class="btn btn-outline-danger btn-xs">arXiv</a> &nbsp; <a href="https://github.com/oxcsml/lie-transformer" class="btn btn-outline-danger btn-xs">GitHub</a> 
-
-**<span style="font-size:;">Provably Strict Generalisation Benefit for Equivariant Models</span>** 
-\
-Bryn Elesedy, Sheheryar Zaidi\
-**_ICML, 2021_**\
-<a href="https://arxiv.org/abs/2102.10333" class="btn btn-outline-danger btn-xs">arXiv</a>
-
-**<span style="font-size:;">Neural Ensemble Search for Uncertainty Estimation and Dataset Shift</span>**
-\
-Sheheryar Zaidi\*, Arber Zela\*, Thomas Elsken, Chris Holmes, Frank Hutter, Yee Whye Teh\
-\*<span style="font-size:smaller;">Equal contribution.</span>\
-**_NeurIPS, 2021_**  
-**_Oral presentation at ICML 2020 Worshop on Uncertainty & Robustness in Deep Learning_**\
-<a href="https://arxiv.org/abs/2006.08573" class="btn btn-outline-danger btn-xs">arXiv</a> &nbsp; <a href="https://github.com/automl/nes" class="btn btn-outline-danger btn-xs">GitHub</a>
+**_AISTATS, 2021 (Oral)_**\
+<a href="https://arxiv.org/abs/2010.12859" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Effectiveness and resource requirements of test, trace and isolate strategies for COVID in the UK</span>**
 \
@@ -73,14 +71,12 @@ Yee Whye Teh, Avishkar Bhoopchand, Peter Diggle, Bryn Elesedy, Bobby He, Michael
 Topic Meeting on R/local R/transmission, 2021_**\
 <a href="https://rss.org.uk/RSS/media/File-library/News/2021/WhyeBhoopchand.pdf" class="btn btn-outline-danger btn-xs">PDF</a> &nbsp; <a href="https://localcovid.info/" class="btn btn-outline-danger btn-xs">Website</a>
 
-**<span style="font-size:;">Target–Aware Bayesian Inference: How to Beat Optimal Conventional Estimators</span>** 
+**<span style="font-size:;">Bayesian Deep Ensembles via the Neural Tangent Kernel</span>** 
 \
-Tom Rainforth\*, Adam Goliński\*, Frank Wood, Sheheryar Zaidi
+Bobby He, Balaji Lakshminarayanan, Yee Whye Teh
 \
-\*<span style="font-size:smaller;">Equal contribution.</span>\
-**_JMLR, 2020_**\
-<a href="https://jmlr.csail.mit.edu/papers/v21/19-102.html" class="btn btn-outline-danger btn-xs">URL</a> -->
-
+**_NeurIPS, 2020_**\
+<a href="https://arxiv.org/abs/2007.05864" class="btn btn-outline-danger btn-xs">Paper</a>
 
 <!-- 
 <button type="button" class="btn btn-danger" onclick="location.href='http://www.example.com'">Danger</button>
