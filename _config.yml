@@ -6,11 +6,10 @@ markdown: kramdown
 exclude: ["README.md"]
 
 sass:
-  sass_dir: _sass
   style: compressed
 
 plugins:
-- jekyll-feed
-- jekyll-seo-tag
+# - jekyll-feed
+# - jekyll-seo-tag
 - jemoji
 #- jekyll-remote-theme
