@@ -1,3 +1,10 @@
+title: Bobby He
+tag_text: Bobby He
+description: Bobby He
+
+markdown: kramdown
+exclude: ["README.md"]
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -5,4 +12,5 @@ sass:
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
+- jemoji
 #- jekyll-remote-theme
