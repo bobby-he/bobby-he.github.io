@@ -7,7 +7,7 @@ layout: default
 
 Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statistics in Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), [Arnaud Doucet](http://www.stats.ox.ac.uk/~doucet/) and [George Deligiannidis](https://www.stats.ox.ac.uk/~deligian/).
 
-I am broadly interested in the basics of deep learning. Most of my work tries to further our theoretical understanding of how Neural Networks (NNs) work, and to connect these insights in order to devise principled methods that can improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
+I am broadly interested in the basics of deep learning. Most of my work tries to further our theoretical understanding of how Neural Networks (NNs) work, and to connect these insights in order to devise principled methods that improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
 
 Before starting my PhD, I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Sprague](https://www.statslab.cam.ac.uk/sprague-prize) (jointly) and [Wishart prizes](https://en.wikipedia.org/wiki/Part_III_of_the_Mathematical_Tripos#Prizes) from the Faculty of Mathematics in Part III.
 
