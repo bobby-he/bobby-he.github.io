@@ -7,17 +7,16 @@ layout: default
 
 Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statistics in Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), [Arnaud Doucet](http://www.stats.ox.ac.uk/~doucet/) and [George Deligiannidis](https://www.stats.ox.ac.uk/~deligian/).
 
-I am broadly interested in the basics of deep learning. Most of my work tries to develop our theoretical understanding of how Neural Networks (NNs) work in some way, and to use these insights to derive principled methods that improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
+I am broadly interested in the basics of deep learning. Most of my work tries to develop our theoretical understanding of how Neural Networks (NNs) work in some way, and connecting these insights to devise principled methods that can improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
 
 Before starting my PhD, I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Srague](https://www.statslab.cam.ac.uk/sprague-prize) (jointly) and Wishart prizes in Part III.
 
-I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am excited to intern at [DeepMind](http://deepmind.com/) with James Martens in the summer of 2022.
+I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning at [DeepMind](http://deepmind.com/) with James Martens in the summer of 2022.
 
 In my spare time I like to: play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)); play and follow various sports like football or tennis; and sketch.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
 
 <a href="mailto:bobbyhe95@gmail.com" class="fa fa-envelope" style="text-decoration:none; font-size: 0.9rem"></a>
 <a href="https://www.linkedin.com/in/bobby-he-5022a28b/" class="fa fa-linkedin" style="text-decoration:none; font-size: 0.9rem"></a>
@@ -69,7 +68,7 @@ Yee Whye Teh, Avishkar Bhoopchand, Peter Diggle, Bryn Elesedy, Bobby He, Michael
 \
 **_Royal Statistical Society’s Covid-19 Task Force: Special
 Topic Meeting on R/local R/transmission, 2021_**\
-<a href="https://rss.org.uk/RSS/media/File-library/News/2021/WhyeBhoopchand.pdf" class="btn btn-outline-danger btn-xs">PDF</a> &nbsp; <a href="https://localcovid.info/" class="btn btn-outline-danger btn-xs">Website</a>
+<a href="https://rss.org.uk/RSS/media/File-library/News/2021/WhyeBhoopchand.pdf" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://localcovid.info/" class="btn btn-outline-danger btn-xs">Website</a>
 
 **<span style="font-size:;">Bayesian Deep Ensembles via the Neural Tangent Kernel</span>** 
 \
