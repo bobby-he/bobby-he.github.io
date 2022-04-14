@@ -9,7 +9,7 @@ Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statisti
 
 I am broadly interested in the basics of deep learning. Most of my work tries to develop our theoretical understanding of how Neural Networks (NNs) work in some way, and connecting these insights to devise principled methods that can improve NNs in practice. My recent research interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
 
-Before starting my PhD, I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Srague](https://www.statslab.cam.ac.uk/sprague-prize) (jointly) and Wishart prizes in Part III.
+Before starting my PhD, I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Sprague](https://www.statslab.cam.ac.uk/sprague-prize) (jointly) and Wishart prizes in Part III.
 
 I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning at [DeepMind](http://deepmind.com/) with James Martens in the summer of 2022.
 
