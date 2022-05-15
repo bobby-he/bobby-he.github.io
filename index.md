@@ -13,7 +13,7 @@ Before starting my PhD I completed an integrated master's in Mathematics at the 
 
 I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning with James Martens at [DeepMind](http://deepmind.com/) in the summer of 2022.
 
-In my spare time I like to: play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)); play and follow various sports such as football (Liverpool in particular) or tennis; and sketch.
+In my spare time I like to play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -27,6 +27,11 @@ In my spare time I like to: play and perform violin (e.g. this [banger](https://
 ---
 
 ## Publications
+
+**<span style="font-size:;">Exploring the Gap between Collapsed & Whitened Features in Self-Supervised Learning</span>**
+\
+Bobby He, Mete Ozay\
+**_To appear at ICML, 2022_**
 
 **<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
 \
