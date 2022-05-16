@@ -31,7 +31,8 @@ In my spare time I like to play and perform violin (e.g. this [banger](https://w
 **<span style="font-size:;">Exploring the Gap between Collapsed & Whitened Features in Self-Supervised Learning</span>**
 \
 Bobby He, Mete Ozay\
-**_To appear at ICML, 2022_**
+<span style="color:lightseagreen">**_ICML, 2022 (to appear)_**</span>.
+
 
 **<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
 \
@@ -43,7 +44,7 @@ Francisca Vasconcelos\*, Bobby He\*, Nalini Singh, Yee Whye Teh\
 **<span style="font-size:;">Feature Kernel Distillation</span>**
 \
 Bobby He, Mete Ozay\
-**_ICLR, 2022_**\
+<span style="color:lightseagreen">**_ICLR, 2022_**</span>\
 <a href="https://openreview.net/forum?id=tBIQEvApZK5" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://research.samsung.com/blog/Feature_Kernel_Distillation" class="btn btn-outline-danger btn-xs">Blog</a> 
 
 **<span style="font-size:;">Probabilistic fine-tuning of pruning masks and PAC-Bayes self-bounded learning</span>** 
@@ -56,7 +57,7 @@ Soufiane Hayou, Bobby He, Gintare Karolina Dziugaite\
 \
 Soufiane Hayou\*, Eugenio Clerico\*, Bobby He\*, George Deligiannidis, Arnaud Doucet, Judith Rousseau\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-**_AISTATS, 2021 (Oral)_**\
+<span style="color:lightseagreen">**_AISTATS, 2021 (Oral)_**</span>\
 <a href="https://arxiv.org/abs/2010.12859" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Effectiveness and resource requirements of test, trace and isolate strategies for COVID in the UK</span>**
@@ -64,22 +65,22 @@ Soufiane Hayou\*, Eugenio Clerico\*, Bobby He\*, George Deligiannidis, Arnaud Do
 Bobby He\*, Sheheryar Zaidi\*, Bryn Elesedy\*, Michael Hutchinson\*, Andrei Paleyes\*, Guy Harling, Anne M
 Johnson, Yee Whye Teh\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-**_Royal Society Open Science, 2021_**\
+<span style="color:lightseagreen">**_Royal Society Open Science, 2021_**</span>\
 <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.201491" class="btn btn-outline-danger btn-xs">DOI</a>
 
 **<span style="font-size:;">Efficient Bayesian Inference of Instantaneous Reproduction Numbers at Fine Spatial Scales, with an Application to Mapping and Nowcasting the Covid-19 Epidemic in British Local Authorities</span>** 
 \
 Yee Whye Teh, Avishkar Bhoopchand, Peter Diggle, Bryn Elesedy, Bobby He, Michael Hutchinson, Ulrich Paquet, Jonathan Read, Nenad Tomasev, Sheheryar Zaidi
 \
-**_Royal Statistical Society’s Covid-19 Task Force: Special
-Topic Meeting on R/local R/transmission, 2021_**\
+<span style="color:lightseagreen">**_Royal Statistical Society’s Covid-19 Task Force: Special
+Topic Meeting on R/local R/transmission, 2021_**</span>\
 <a href="https://rss.org.uk/RSS/media/File-library/News/2021/WhyeBhoopchand.pdf" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://localcovid.info/" class="btn btn-outline-danger btn-xs">Website</a>
 
 **<span style="font-size:;">Bayesian Deep Ensembles via the Neural Tangent Kernel</span>** 
 \
 Bobby He, Balaji Lakshminarayanan, Yee Whye Teh
 \
-**_NeurIPS, 2020_**\
+<span style="color:lightseagreen">**_NeurIPS, 2020_**</span>\
 <a href="https://arxiv.org/abs/2007.05864" class="btn btn-outline-danger btn-xs">Paper</a>
 
 <!-- 
