@@ -7,13 +7,15 @@ layout: default
 
 Hi! I'm Bobby :blush: I'm a final year PhD student at the Department of Statistics in Oxford, supervised by [Yee Whye Teh](https://www.stats.ox.ac.uk/~teh/), [Arnaud Doucet](http://www.stats.ox.ac.uk/~doucet/) and [George Deligiannidis](https://www.stats.ox.ac.uk/~deligian/).
 
-I am broadly interested in the basics of deep learning. Most of my research attempts to improve our theoretical understanding of how Neural Networks (NNs) work, and connect these insights so as to devise principled methods that improve NNs in practice. My recent interests centre around NN feature learning, and its relevance for techniques such as knowledge distillation or self-supervised learning, as well as uncertainty estimation, Bayesian deep learning and infinite-width NNs.
+I am broadly interested in the basics of deep learning. Most of my research attempts to improve our theoretical understanding of how Neural Networks (NNs) work, and use these insights to devise principled methods that improve NNs in practice.
 
 Before starting my PhD I completed an integrated master's in Mathematics at the University of Cambridge, where I received the [Sprague](https://www.statslab.cam.ac.uk/files/Rollo/spragueaward18.pdf) (jointly) and [Wishart prizes](https://en.wikipedia.org/wiki/Part_III_of_the_Mathematical_Tripos#Prizes) in Part III.
 
-I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and am looking forward to interning with James Martens at [DeepMind](http://deepmind.com/) in the summer of 2022.
+I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and with James Martens at [DeepMind](http://deepmind.com/) in the summer of 2022.
 
-In my spare time I like to play and perform violin (e.g. this [banger](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
+In my spare time I like to play and perform violin ([example]](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
+
+**_I'm currently on the job market!_**
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -27,37 +29,43 @@ In my spare time I like to play and perform violin (e.g. this [banger](https://w
 ---
 
 ## Publications
+**<span style="font-size:;">Deep Transformers without Shortcuts: Modifying Self-Attention for Faithful Signal Propagation</span>**
+\
+Bobby He, James Martens, Guodong Zhang, Alex Botev, Andy Brock, Sam Smith, Yee Whye Teh\
+<span style="color:lightseagreen">**_ICLR 2023 (to appear)_**</span>
+
 
 **<span style="font-size:;">Exploring the Gap between Collapsed & Whitened Features in Self-Supervised Learning</span>**
 \
 Bobby He, Mete Ozay\
-<span style="color:lightseagreen">**_ICML, 2022 (to appear)_**</span>.
+<span style="color:lightseagreen">**_ICML 2022_**</span>\
+<a href="https://proceedings.mlr.press/v162/he22c.html" class="btn btn-outline-danger btn-xs">Paper</a>
 
 
 **<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
 \
 Francisca Vasconcelos\*, Bobby He\*, Nalini Singh, Yee Whye Teh\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-**_Preprint, 2022_**\
+**_In review 2022_**\
 <a href="https://arxiv.org/abs/2202.10847" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Feature Kernel Distillation</span>**
 \
 Bobby He, Mete Ozay\
-<span style="color:lightseagreen">**_ICLR, 2022_**</span>\
-<a href="https://openreview.net/forum?id=tBIQEvApZK5" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://research.samsung.com/blog/Feature_Kernel_Distillation" class="btn btn-outline-danger btn-xs">Blog</a> 
+<span style="color:lightseagreen">**_ICLR 2022_**</span>\
+<a href="https://openreview.net/forum?id=tBIQEvApZK5" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://research.samsung.com/blog/Feature_Kernel_Distillation" class="btn btn-outline-danger btn-xs">Blog</a>
 
-**<span style="font-size:;">Probabilistic fine-tuning of pruning masks and PAC-Bayes self-bounded learning</span>** 
+**<span style="font-size:;">Probabilistic fine-tuning of pruning masks and PAC-Bayes self-bounded learning</span>**
 \
 Soufiane Hayou, Bobby He, Gintare Karolina Dziugaite\
-**_Preprint, 2021_**\
+**_Preprint 2021_**\
 <a href="https://arxiv.org/abs/2110.11804" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Stable ResNet</span>**
 \
 Soufiane Hayou\*, Eugenio Clerico\*, Bobby He\*, George Deligiannidis, Arnaud Doucet, Judith Rousseau\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-<span style="color:lightseagreen">**_AISTATS, 2021 (Oral)_**</span>\
+<span style="color:lightseagreen">**_AISTATS 2021 (Oral)_**</span>\
 <a href="https://arxiv.org/abs/2010.12859" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Effectiveness and resource requirements of test, trace and isolate strategies for COVID in the UK</span>**
@@ -65,25 +73,25 @@ Soufiane Hayou\*, Eugenio Clerico\*, Bobby He\*, George Deligiannidis, Arnaud Do
 Bobby He\*, Sheheryar Zaidi\*, Bryn Elesedy\*, Michael Hutchinson\*, Andrei Paleyes\*, Guy Harling, Anne M
 Johnson, Yee Whye Teh\
 \*<span style="font-size:smaller;">Equal contribution.</span>\
-<span style="color:lightseagreen">**_Royal Society Open Science, 2021_**</span>\
+<span style="color:lightseagreen">**_Royal Society Open Science 2021_**</span>\
 <a href="https://royalsocietypublishing.org/doi/10.1098/rsos.201491" class="btn btn-outline-danger btn-xs">DOI</a>
 
-**<span style="font-size:;">Efficient Bayesian Inference of Instantaneous Reproduction Numbers at Fine Spatial Scales, with an Application to Mapping and Nowcasting the Covid-19 Epidemic in British Local Authorities</span>** 
+**<span style="font-size:;">Efficient Bayesian Inference of Instantaneous Reproduction Numbers at Fine Spatial Scales, with an Application to Mapping and Nowcasting the Covid-19 Epidemic in British Local Authorities</span>**
 \
 Yee Whye Teh, Avishkar Bhoopchand, Peter Diggle, Bryn Elesedy, Bobby He, Michael Hutchinson, Ulrich Paquet, Jonathan Read, Nenad Tomasev, Sheheryar Zaidi
 \
 <span style="color:lightseagreen">**_Royal Statistical Society’s Covid-19 Task Force: Special
-Topic Meeting on R/local R/transmission, 2021_**</span>\
+Topic Meeting on R/local R/transmission 2021_**</span>\
 <a href="https://rss.org.uk/RSS/media/File-library/News/2021/WhyeBhoopchand.pdf" class="btn btn-outline-danger btn-xs">Paper</a> &nbsp; <a href="https://localcovid.info/" class="btn btn-outline-danger btn-xs">Website</a>
 
-**<span style="font-size:;">Bayesian Deep Ensembles via the Neural Tangent Kernel</span>** 
+**<span style="font-size:;">Bayesian Deep Ensembles via the Neural Tangent Kernel</span>**
 \
 Bobby He, Balaji Lakshminarayanan, Yee Whye Teh
 \
-<span style="color:lightseagreen">**_NeurIPS, 2020_**</span>\
+<span style="color:lightseagreen">**_NeurIPS 2020_**</span>\
 <a href="https://arxiv.org/abs/2007.05864" class="btn btn-outline-danger btn-xs">Paper</a>
 
-<!-- 
+<!--
 <button type="button" class="btn btn-danger" onclick="location.href='http://www.example.com'">Danger</button>
 
 
