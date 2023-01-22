@@ -13,7 +13,7 @@ Before starting my PhD I completed an integrated master's in Mathematics at the 
 
 I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) hosted by Mete Ozay from July 2021 to April 2022, and with James Martens at [DeepMind](http://deepmind.com/) in the summer of 2022.
 
-In my spare time I like to play and perform violin ([example]](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
+In my spare time I like to play and perform violin ([example](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
 
 **_I'm currently on the job market!_**
 
