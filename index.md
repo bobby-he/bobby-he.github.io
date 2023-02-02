@@ -32,7 +32,8 @@ In my spare time I like to play and perform violin ([example](https://www.youtub
 **<span style="font-size:;">Deep Transformers without Shortcuts: Modifying Self-Attention for Faithful Signal Propagation</span>**
 \
 Bobby He, James Martens, Guodong Zhang, Alex Botev, Andy Brock, Sam Smith, Yee Whye Teh\
-<span style="color:lightseagreen">**_ICLR 2023 (to appear)_**</span>
+<span style="color:lightseagreen">**_ICLR 2023 (to appear)_**</span>\
+<a href="https://openreview.net/forum?id=NPrsUQgMjKK" class="btn btn-outline-danger btn-xs">Paper</a>
 
 
 **<span style="font-size:;">Exploring the Gap between Collapsed & Whitened Features in Self-Supervised Learning</span>**
