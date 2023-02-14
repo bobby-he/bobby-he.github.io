@@ -36,19 +36,19 @@ Bobby He, James Martens, Guodong Zhang, Alex Botev, Andy Brock, Sam Smith, Yee W
 <a href="https://openreview.net/forum?id=NPrsUQgMjKK" class="btn btn-outline-danger btn-xs">Paper</a>
 
 
+**<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
+\
+Francisca Vasconcelos\*, Bobby He\*, Nalini Singh, Yee Whye Teh\
+\*<span style="font-size:smaller;">Equal contribution.</span>\
+<span style="color:lightseagreen">**_TMLR 2023 (to appear)_**</span>\
+<a href="https://arxiv.org/abs/2202.10847" class="btn btn-outline-danger btn-xs">Paper</a>
+
 **<span style="font-size:;">Exploring the Gap between Collapsed & Whitened Features in Self-Supervised Learning</span>**
 \
 Bobby He, Mete Ozay\
 <span style="color:lightseagreen">**_ICML 2022_**</span>\
 <a href="https://proceedings.mlr.press/v162/he22c.html" class="btn btn-outline-danger btn-xs">Paper</a>
 
-
-**<span style="font-size:;">UncertaINR: Uncertainty Quantification of End-to-End Implicit Neural Representations for Computed Tomography</span>** &nbsp;
-\
-Francisca Vasconcelos\*, Bobby He\*, Nalini Singh, Yee Whye Teh\
-\*<span style="font-size:smaller;">Equal contribution.</span>\
-**_In review 2022_**\
-<a href="https://arxiv.org/abs/2202.10847" class="btn btn-outline-danger btn-xs">Paper</a>
 
 **<span style="font-size:;">Feature Kernel Distillation</span>**
 \
