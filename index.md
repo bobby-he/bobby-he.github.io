@@ -15,8 +15,6 @@ I enjoyed interning at [Samsung Research UK](https://research.samsung.com/sruk) 
 
 In my spare time I like to play and perform violin ([example](https://www.youtube.com/watch?v=CueoUhu-Spw)), and play and follow various sports such as football (Liverpool in particular) or tennis.
 
-**_I'm currently on the job market!_**
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
